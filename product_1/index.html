@@ -1,0 +1,94 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="logo">Viva</div>
+        <nav>
+            <a href="#">Shop</a>
+            <a href="#">Categories</a>
+            <a href="#">Deals</a>
+        </nav>
+        <div class="header-icons">
+            <input type="text" placeholder="Search...">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-user"></i>
+        </div>
+    </header>
+
+    <!-- Main Product Section -->
+    <main>
+        <div class="product-container">
+            <!-- Left Column: Product Images -->
+            <div class="image-gallery">
+                <img id="main-image" src="img/dress.jpg" alt="Product Image">
+                <div class="thumbnail-row">
+                    <img src="img/rayon.webp" alt="Front View" class="thumbnail" onclick="changeImage('product-front.jpg')">
+                    <img src="img/rayon.webp" alt="Back View" class="thumbnail" onclick="changeImage('product-back.jpg')">
+                    <img src="img/rayon.webp" alt="Side View" class="thumbnail" onclick="changeImage('product-side.jpg')">
+                    <img src="img/dress.jpg" alt="Zoom View" class="thumbnail" onclick="changeImage('product-zoom.jpg')">
+                </div>
+            </div>
+
+            <!-- Right Column: Product Details -->
+            <div class="product-details">
+                <h1>Rayon midi Dress</h1>
+                <div class="rating">
+                    <span>★★★★☆</span> (120 Reviews)
+                </div>
+                <h2>$129.99</h2>
+                <p>Feel the ocean breeze with this elegant and comfortable dress. Perfect for both casual and formal occasions.</p>
+                <label for="size">Size:</label>
+                <select id="size">
+                    <option>Small</option>
+                    <option>Medium</option>
+                    <option>Large</option>
+                </select>
+                <label for="color">Color:</label>
+                <select id="color">
+                    <option>Blue</option>
+                    <option>Teal</option>
+                    <option>Purple</option>
+                </select>
+                <button>Add to Cart</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Reviews Section -->
+    <section class="reviews">
+        <h3>Customer Reviews</h3>
+        <div class="review-card">
+            <h4>Jane Doe</h4>
+            <p>★★★★☆</p>
+            <p>Love this dress! The color is stunning and the fabric is super comfortable.</p>
+        </div>
+        <div class="review-card">
+            <h4>John Smith</h4>
+            <p>★★★★★</p>
+            <p>Amazing quality and fits perfectly!</p>
+        </div>
+    </section>
+
+    <!-- Similar Products Section -->
+    <section class="similar-products">
+        <h3>Similar Products</h3>
+        <div class="product-card">
+            <img src="img/n1.png" alt="Similar Product 1">
+            <p>Ocean Breeze Top - $59.99</p>
+        </div>
+        <div class="product-card">
+            <img src="img/n3.png" alt="Similar Product 2">
+            <p>Beach Vibes Skirt - $49.99</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
