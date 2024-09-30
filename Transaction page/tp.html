@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Page</title>
+    <link rel="stylesheet" href="tp.css">
+</head>
+<body>
+    <div class="transaction-container">
+        <header>
+            <h1>Your Transaction</h1>
+        </header>
+
+        <section class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Product 1</td>
+                        <td>2</td>
+                        <td>$20.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product 2</td>
+                        <td>1</td>
+                        <td>$35.00</td>
+                    </tr>
+                    <tr>
+                        <td>Product 3</td>
+                        <td>3</td>
+                        <td>$15.00</td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="total">
+                <p>Total: <span>$85.00</span></p>
+            </div>
+        </section>
+
+        <section class="payment-section">
+            <h2>Payment Information</h2>
+            <form action="#">
+                <label for="card-name">Cardholder's Name</label>
+                <input type="text" id="card-name" name="card-name" required>
+
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+
+                <div class="card-details">
+                    <label for="expiry-date">Expiry Date</label>
+                    <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY" required>
+
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Pay Now</button>
+            </form>
+        </section>
+    </div>
+</body>
+</html>
