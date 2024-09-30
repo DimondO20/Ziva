@@ -5,4 +5,6 @@ Author- Anurag Chakraborty
 <br>
 Managment - Soutrick Mukhopadhyay
 <br>
-Front end - Soutik Das
+Data Handling - Soutik Das
+<br>
+Full Stack - Surasree Manna
